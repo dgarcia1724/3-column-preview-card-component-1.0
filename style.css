@@ -1,0 +1,179 @@
+:root {
+  --orange: hsl(31, 77%, 52%);
+  --blue: hsl(184, 100%, 22%);
+  --green: hsl(179, 100%, 13%);
+  --white: hsla(0, 0%, 100%, 0.75);
+  --lightGray: hsl(0, 0%, 95%);
+
+  --fontBold: "Big Shoulders Display", cursive;
+  --fontRegular: "Lexend Deca", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--lightGray);
+  margin: 8.8rem 2.4rem;
+}
+
+.paragraphsFont {
+  font-family: var(--fontRegular);
+  font-weight: 400;
+  line-height: 25px;
+
+  font-size: 1.5rem;
+  color: var(--white);
+}
+
+.headingsFont {
+  font-family: var(--fontBold);
+  font-weight: 700;
+
+  color: var(--lightGray);
+}
+
+.container {
+  margin: 0 auto;
+
+  max-width: 32.7rem;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/****** orange  ********/
+
+.orange {
+  padding: 4.8rem;
+  background-color: var(--orange);
+}
+
+.orange > img {
+  margin-bottom: 3.5rem;
+}
+
+.orange > h1 {
+  margin-bottom: 2.5rem;
+  font-size: 4rem;
+}
+
+.orange > p {
+  margin-bottom: 2.5rem;
+}
+/****** blue  ********/
+
+.blue {
+  padding: 4.8rem;
+  background-color: var(--blue);
+}
+
+.blue > img {
+  margin-bottom: 3.5rem;
+}
+
+.blue > h1 {
+  margin-bottom: 2.5rem;
+  font-size: 4rem;
+}
+
+.blue > p {
+  margin-bottom: 2.5rem;
+}
+/****** green  ********/
+
+.green {
+  padding: 4.8rem;
+  background-color: var(--green);
+}
+
+.green > img {
+  margin-bottom: 3.5rem;
+}
+
+.green > h1 {
+  margin-bottom: 2.5rem;
+  font-size: 4rem;
+}
+
+.green > p {
+  margin-bottom: 2.5rem;
+}
+/*********** BUTTONS  ***********/
+/**** btnOrange ******/
+
+.learnMoreOrange {
+  padding: 1.2rem 3.2rem;
+  border-radius: 24px;
+  border: none;
+
+  font-family: var(--fontRegular);
+  background-color: var(--lightGray);
+  color: var(--orange);
+  cursor: pointer;
+}
+
+.learnMoreOrange:hover {
+  background-color: var(--orange);
+  color: var(--lightGray);
+  box-shadow: inset 0 0 0 3px var(--lightGray);
+}
+/**** btnBlue ******/
+
+.learnMoreBlue {
+  padding: 1.2rem 3.2rem;
+  border-radius: 24px;
+  border: none;
+
+  font-family: var(--fontRegular);
+  background-color: var(--lightGray);
+  color: var(--blue);
+  cursor: pointer;
+}
+
+.learnMoreBlue:hover {
+  background-color: var(--blue);
+  color: var(--lightGray);
+  box-shadow: inset 0 0 0 3px var(--lightGray);
+}
+/**** btnOrange ******/
+
+.learnMoreGreen {
+  padding: 1.2rem 3.2rem;
+  border-radius: 24px;
+  border: none;
+
+  font-family: var(--fontRegular);
+  background-color: var(--lightGray);
+  color: var(--green);
+  cursor: pointer;
+}
+
+.learnMoreGreen:hover {
+  background-color: var(--green);
+  color: var(--lightGray);
+  box-shadow: inset 0 0 0 3px var(--lightGray);
+}
+
+@media (min-width: 920px) {
+  .container {
+    display: flex;
+    max-width: 92rem;
+  }
+
+  .orange p {
+    margin-bottom: 8.3rem;
+  }
+  .blue p {
+    margin-bottom: 8.3rem;
+  }
+  .green p {
+    margin-bottom: 8.3rem;
+  }
+}
